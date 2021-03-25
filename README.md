@@ -27,12 +27,12 @@ these modules.
 | Name  | Default Values | Description |
 |-------|--------|----|
 | region | `us-west-2` | The AWS region where the backend infrastructure will be created. |
-| cidr   | `10.0.0.0/32` | The ID of the VPC where the backend infrastructure will be created. |
-| open_ports | `4567` | The CIDR block used with the security group to open ports. |
-| instance_type | `t2.micro` | The list of ports that will be exposed on the EC2 instance. |
-| vpc_id | Must be provided | The name of the application that will be deployed. |
-| task_name   | Must be provided | The name of the key pair that will be associated with the new EC2 instance. |
-| key_name  | Must be provided | The instance type that will be created to host the Docker Container. |
+| cidr   | `10.0.0.0/32` | The CIDR block used with the security group to open ports. |
+| open_ports | `4567` | The list of ports that will be exposed on the EC2 instance. |
+| instance_type | `t2.micro` | The instance type that will be created to host the Docker Container. |
+| vpc_id | Must be provided | The ID of the VPC where the backend infrastructure will be created. |
+| task_name   | Must be provided | The name of the application that will be deployed. |
+| key_name  | Must be provided | The name of the key pair that will be associated with the new EC2 instance. |
 | ecr_repo_name | Must be provided | The name of the Docker repo in ECR that hosts the Container. |
 | username | Must be provided | The user that will be used to SSH to the remote instance and manage Docker. |
 | target_ip | Must be provided | The IP of the target instance to run the desired Container. |
